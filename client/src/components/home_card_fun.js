@@ -10,7 +10,7 @@ const HomeCard = (props) => {
       ? props.goToPayment
       : props.goToMyAccount;
   return (
-    <Card className={Classes.card} key={props.key}>
+    <Card className={Classes.card} key={props.title}>
       <Card.Img variant="top" src={props.image} width="100px" height="150px" />
 
       <Card.Body>

@@ -238,9 +238,9 @@ const Home = ({ name, ...props }) => {
           </Carousel>
         </div>
         <div className={Classes.home_card}>
-          {data.map((value) => (
+          {data.map((value, i) => (
             <HomeCard
-              key={value.title}
+              key={i}
               title={value.title}
               description={value.description}
               image={value.image}

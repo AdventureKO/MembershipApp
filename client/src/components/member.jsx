@@ -36,22 +36,22 @@ class Member extends Component {
     let component;
     if (!this.props.isNewDep) {
       component = (
-        <React.Fragment>
-          <td className={Classes.centerimg}>
-            <OverlayTrigger
-              placement="left"
-              delay={{ show: 250, hide: 400 }}
-              overlay={this.props.isDep ? renderDepETooltip : renderTooltip}
-            >
-              <img
-                src={icon}
-                onClick={this.handleEditButtonClick}
-                className={`${Classes.pointer} ${Classes.image}`}
-                alt="View Member"
-              />
-            </OverlayTrigger>
-          </td>
-        </React.Fragment>
+        // <React.Fragment>
+        <td className={Classes.centerimg}>
+          <OverlayTrigger
+            placement="left"
+            delay={{ show: 250, hide: 400 }}
+            overlay={this.props.isDep ? renderDepETooltip : renderTooltip}
+          >
+            <img
+              src={icon}
+              onClick={this.handleEditButtonClick}
+              className={`${Classes.pointer} ${Classes.image}`}
+              alt="View Member"
+            />
+          </OverlayTrigger>
+        </td>
+        // </React.Fragment>
       );
     } else {
       component = (

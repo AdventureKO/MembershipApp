@@ -82,13 +82,15 @@ const MyActivities = () => {
         <div className={Classes.tbody}>
           <div className={Classes.tbodyContent}>
             <div className={Classes.trowActivities}>
-              {userActivities.map((activity) => (
-                <div className={Classes.tdataActivities}>{activity}</div>
+              {userActivities.map((activity, i) => (
+                <div key={i} className={Classes.tdataActivities}>
+                  {activity}
+                </div>
               ))}
             </div>
             <div className={Classes.trowVolunteer}>
-              {userVolunteering.map((volunteering) => (
-                <div className={Classes.tdataVolunteer}>
+              {userVolunteering.map((volunteering, i) => (
+                <div key={i} className={Classes.tdataVolunteer}>
                   <div>
                     <strong>Event:</strong>&nbsp;&nbsp; {volunteering.name}
                   </div>

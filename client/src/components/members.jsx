@@ -11,7 +11,7 @@ import { getStreets } from "../utils/memberutils";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import "./css_stuff/member.css";
-import PaginationTable from "./PaginationTable.jsx";
+import PaginationTable from "./membersTable.jsx";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
 import { Container } from "react-bootstrap";

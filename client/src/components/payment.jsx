@@ -161,6 +161,7 @@ function Payment({ addTextLog }) {
                     >
                       {buttonlist1.map((buttonLabel, i) => (
                         <ToggleButton
+                          key={i}
                           id={"radio" + i}
                           value={buttonLabel}
                           variant="outline-primary"

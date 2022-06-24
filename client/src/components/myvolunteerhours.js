@@ -51,7 +51,7 @@ const MyVolunteerHours = () => {
 
         <ol>
           {userVolunteering.map((activity, i) => (
-            <li>
+            <li key={activity.name}>
               <div className="d-flex flex-row justify-content-between">
                 <b>Event:</b>
                 <span>{activity.name}</span>

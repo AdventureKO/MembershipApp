@@ -562,7 +562,7 @@ class MyAccount extends Component {
 
             {/* Contact Info Below */}
             <h4 className="ml-3">Contact Information</h4>
-            <hr class="solid mr-2" />
+            <hr className="solid mr-2" />
             <Row className="rowSpace">
               <Form.Group className="detailSpace mb-4">
                 <Form.Label>Email</Form.Label>
@@ -608,7 +608,7 @@ class MyAccount extends Component {
  </Row>*/}
 
           <div id="editing" style={{ display: "none" }}>
-            <hr class="dsolid mr-2" />
+            <hr className="dsolid mr-2" />
             <Button
               variant="dark"
               onClick={() => {
@@ -730,7 +730,7 @@ class MyAccount extends Component {
               Add Dependent
             </Button>
           </h4>
-          <hr class="solid mr-2" />
+          <hr className="solid mr-2" />
           <h2>NO DEPENDENTS</h2>
         </React.Fragment>
       );
